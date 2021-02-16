@@ -50,6 +50,37 @@ console.log(first); // --> 10
 console.log(fourth); // --> 40
 
 ```
+## foreach() --  array methods
+El método forEach() ejecuta la función indicada una vez por cada elemento del array.
+
+```javascript
+const startups = [
+    {name: 'airbnb', industry: 'commerce'},
+    {name: 'wish', industry: 'consumer '},
+    {name: 'spaceX', industry: 'science'}
+];
+startups.forEach(startup => {
+    console.log(`${startup.name} - Industry: ${startup.industry}`)
+    
+});
+// airbnb - Industry: commerce
+// wish - Industry: consumer 
+// spaceX - Industry: science
+```
+## map()
+El método map() crea un nuevo array con los resultados de la llamada a la función indicada aplicados 
+a cada uno de sus elementos.
+
+```javascript
+// tomamos como referencia el array de startups anterior
+const nuevoArreglo = startups.map(st => {
+    return `${st.name} - ${st.industry}`;
+})
+
+console.log(nuevoArreglo);
+// ["airbnb - commerce", "wish - consumer ", "spaceX - science"]
+
+```
 
 
 ```javascript
