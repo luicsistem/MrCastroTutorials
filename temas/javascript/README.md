@@ -3,6 +3,65 @@
 Es el lenguaje de programación con el cual podras ser el rey , un full stack. 
 ![Javascript](https://bit.ly/2LM4xbe)
 
+## Objetos 
+Un objeto es una colección de propiedades, y una propiedad es una asociación entre un nombre (o clave) y un valor.
+
+## Sintaxis
+```javascript
+// object literal 
+const ecommerce = {
+    name: 'woocommerce',
+    opcion: 'free'
+}
+
+// otra forma de crear un objeto
+const obj = new Object();
+obj.name = 'shopify';
+obj.opcion = 'paga';
+console.log(obj); // {name: "shopify", opcion: "paga"}
+```
+## Acceder a los valores de un objeto
+```javascript
+ const startup = {
+     name: 'airbnb',
+     industry: 'commerce'
+ };
+
+ // 1ra forma con la opcion de .
+  console.log(startup.name); // --> airbnb
+
+  // 2da forma con []
+   console.log(startup['industry']); // --> commerce
+```
+## Agregar nuevas propiedades al objeto
+```javascript
+    startup.imagen = "imagen.jpg";
+    console.log(startup) 
+    // {name: "airbnb", industry: "commerce", imagen: "imagen.jpg"}
+
+```
+
+## borrar propiedades del objeto
+
+```javascript
+    delete startup.name;
+    console.log(startup);  // {industry: "commerce", imagen: "imagen.jpg"}
+
+```
+
+
+
+
+```javascript
+
+```
+
+
+
+
+
+
+
 ## Arreglos (array)
 Un array es una lista ordenada de valores a los que te refieres con un nombre y un índice.
 
