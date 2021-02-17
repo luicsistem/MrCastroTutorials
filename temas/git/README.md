@@ -36,7 +36,7 @@ $ git add .
 ## Confirmacion de cambios
 ```java
 user@mrcastro/c/git(master)
-$ git commit -m 'my first commit'
+$ git commit -m "my first commit"
 ```
 ## Visualizar los estados
 ```java
