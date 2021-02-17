@@ -88,7 +88,7 @@ console.log(products); // --> (3) ["tablet", "laptop", "printer"]
 
 // eliminar cualquier elemento
 products.splice(1, 1);
-console.log(products);
+console.log(products); // ["tablet", "printer"]
 ```
 ## Spread Operator ( ES6 ) 
 El operador de propagación  permite que una expresión sea expandida en situaciones donde se 
@@ -125,6 +125,15 @@ startups.forEach(startup => {
 // airbnb - Industry: commerce
 // wish - Industry: consumer 
 // spaceX - Industry: science
+
+const numbers = [30,50];
+numbers.forEach(function(n) {
+    console.log(n * 2)
+});
+// 60
+// 100
+
+
 ```
 ## map()
 El método map() crea un nuevo array con los resultados de la llamada a la función indicada aplicados 
@@ -138,6 +147,14 @@ const nuevoArreglo = startups.map(st => {
 
 console.log(nuevoArreglo);
 // ["airbnb - commerce", "wish - consumer ", "spaceX - science"]
+
+const numbers = [11,80];
+const nuevoArr = numbers.map(function(n) {
+    return n * 3;
+});
+console.log(nuevoArr); // [33, 240]
+
+
 
 ```
 
