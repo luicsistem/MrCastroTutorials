@@ -71,8 +71,8 @@ const arr = new Array(1, 2, 3);
 const friends = ['paolo', 'gustavo', 'jhosep'];
 const numbers = [33, 22 , [3,4,5]];
 
-console.log(friends[0]) // paolo
-console.log(numbers[2][0]) // 3
+console.log(friends[0]) // -->  paolo
+console.log(numbers[2][0]) // -->  3
 ```
 ## Agregar nuevos valores a un array
 
@@ -80,10 +80,10 @@ console.log(numbers[2][0]) // 3
 const products = ['tablet', 'laptop', 'printer'];
 // agregar al final del arreglo
 products.push('camera');
-console.log(products); // --> (4) ["tablet", "laptop", "printer", "camera"]
+console.log(products); // -->  ["tablet", "laptop", "printer", "camera"]
 
 // agregar al inicio del arreglo
-products.unshift('tv'); // --> (5) ["tv", "tablet", "laptop", "printer", "camera"]
+products.unshift('tv'); // -->  ["tv", "tablet", "laptop", "printer", "camera"]
 
 // otra forma 
 products[0] = 'nuevo producto';
@@ -94,13 +94,15 @@ console.log(products);  // ["nuevo producto", "tablet", "laptop", "printer", "ca
 ```
 ## Eliminar valores de un array
 ```javascript
-// elimina el ultimo  elemento el arreglo
+const products = ["tv", "tablet", "laptop", "printer", "camera"];
+
+// elimina el ultimo  elemento del arreglo
 products.pop();
-console.log(products); // --> 4) ["tv", "tablet", "laptop", "printer"]
+console.log(products); // -->  ["tv", "tablet", "laptop", "printer"]
 
 // elimina el 1er elmento del arreglo
 products.shift();
-console.log(products); // --> (3) ["tablet", "laptop", "printer"]
+console.log(products); // -->  ["tablet", "laptop", "printer"]
 
 // eliminar cualquier elemento
 products.splice(1, 1);
@@ -139,7 +141,7 @@ console.log(first); // --> 10
 console.log(fourth); // --> 40
 
 ```
-## foreach() --  array methods
+## foreach() 
 El método forEach() ejecuta la función indicada una vez por cada elemento del array.
 
 ```javascript
@@ -162,8 +164,6 @@ numbers.forEach(function(n) {
 });
 // 60
 // 100
-
-
 ```
 ## map()
 El método map() crea un nuevo array con los resultados de la llamada a la función indicada aplicados 
@@ -183,8 +183,6 @@ const nuevoArr = numbers.map(function(n) {
     return n * 3;
 });
 console.log(nuevoArr); // [33, 240]
-
-
 
 ```
 
