@@ -48,8 +48,19 @@ console.log(obj); // {name: "shopify", opcion: "paga"}
     console.log(startup);  // {industry: "commerce", imagen: "imagen.jpg"}
 
 ```
+## Destructuring de objetos
+Podemos extraer aquella propiedad del objeto que queramos y asiganarlas a las varaibles que definamos.
 
 ```javascript
+const user = {
+    name: 'mr castro',
+    age: 33
+}
+
+// desestructurando
+const {name, age } = user;
+console.log(name); // mr castro
+console.log(age); // 33
 
 ```
 
