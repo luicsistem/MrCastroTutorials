@@ -1,9 +1,9 @@
-# Javascript
+# JAVASCRIPT
 
 Es el lenguaje de programación con el cual podras ser el rey , un full stack. 
 ![Javascript](https://bit.ly/2LM4xbe)
 
-## Objetos 
+## OBJETOS 
 Un objeto es una colección de propiedades, y una propiedad es una asociación entre un nombre (o clave) y un valor.
 
 ## Sintaxis
@@ -49,27 +49,34 @@ console.log(obj); // {name: "shopify", opcion: "paga"}
 
 ```
 
-
-
-
 ```javascript
 
 ```
 
 
 
+--- 
 
-
-
-
-## Arreglos (array)
+## ARREGLOS (array)
 Un array es una lista ordenada de valores a los que te refieres con un nombre y un índice.
 
 ```javascript
 
 const fruits = ['mango', 'banana'];
 const arr = new Array(1, 2, 3);
+```
+## Acceder a valores de un array
+```javascript
 
+const friends = ['paolo', 'gustavo', 'jhosep'];
+const numbers = [33, 22 , [3,4,5]];
+
+console.log(friends[0]) // paolo
+console.log(numbers[2][0]) // 3
+```
+## Agregar y eliminar nuevos valores a un array
+
+```javascript
 const products = ['tablet', 'laptop', 'printer'];
 // agregar al final del arreglo
 products.push('camera');
@@ -89,7 +96,20 @@ console.log(products); // --> (3) ["tablet", "laptop", "printer"]
 // eliminar cualquier elemento
 products.splice(1, 1);
 console.log(products); // ["tablet", "printer"]
+
 ```
+## Recorrer un array
+
+```javascript
+const spirits = ['pisco', 'wisky', 'vodka'];
+for(let i = 0; i < spirits.length ; i ++) {
+    console.log(spirits[i]);
+};
+// pisco
+// wisky
+// vodka
+```
+
 ## Spread Operator ( ES6 ) 
 El operador de propagación  permite que una expresión sea expandida en situaciones donde se 
 esperan múltiples argumentos (llamadas a funciones) o múltiples elementos (arrays literales).
