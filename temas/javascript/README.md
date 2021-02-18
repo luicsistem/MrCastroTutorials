@@ -11,14 +11,14 @@ Un objeto es una colección de propiedades, y una propiedad es una asociación e
 // object literal 
 const ecommerce = {
     name: 'woocommerce',
-    opcion: 'free'
+    option: 'free'
 }
 
 // otra forma de crear un objeto
 const obj = new Object();
 obj.name = 'shopify';
-obj.opcion = 'paga';
-console.log(obj); // {name: "shopify", opcion: "paga"}
+obj.option = 'paid';
+console.log(obj); // {name: "shopify", option : "paid"}
 ```
 ## Acceder a los valores de un objeto
 ```javascript
@@ -61,8 +61,35 @@ const user = {
 const {name, age } = user;
 console.log(name); // mr castro
 console.log(age); // 33
+```
+
+## Destructuring de objetos anidados
+
+```javascript
+const product = {
+    name: 'laptop',
+    price: 3200,
+    available: true,
+    dataSheet : {
+        model: '15-cw108la',
+        weight: '1,8 kg'
+         }
+}
+
+const {name, dataSheet: { model, weight }} = product;
+console.log(model); // 15-cw108la
+
+// forma antigua de acceder
+console.log(product.dataSheet.model); // 15-cw108la
 
 ```
+
+```javascript
+
+```
+
+
+
 
 
 
@@ -152,6 +179,7 @@ console.log(first); // --> 10
 console.log(fourth); // --> 40
 
 ```
+
 ## foreach() 
 El método forEach() ejecuta la función indicada una vez por cada elemento del array.
 
