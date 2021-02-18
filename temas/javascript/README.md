@@ -74,7 +74,7 @@ const numbers = [33, 22 , [3,4,5]];
 console.log(friends[0]) // paolo
 console.log(numbers[2][0]) // 3
 ```
-## Agregar y eliminar nuevos valores a un array
+## Agregar nuevos valores a un array
 
 ```javascript
 const products = ['tablet', 'laptop', 'printer'];
@@ -85,6 +85,15 @@ console.log(products); // --> (4) ["tablet", "laptop", "printer", "camera"]
 // agregar al inicio del arreglo
 products.unshift('tv'); // --> (5) ["tv", "tablet", "laptop", "printer", "camera"]
 
+// otra forma 
+products[0] = 'nuevo producto';
+console.log(products);   // ["nuevo producto", "tablet", "laptop", "printer", "camera"]
+
+products[5] = 'radio'; 
+console.log(products);  // ["nuevo producto", "tablet", "laptop", "printer", "camera", "radio"]
+```
+## Eliminar valores de un array
+```javascript
 // elimina el ultimo  elemento el arreglo
 products.pop();
 console.log(products); // --> 4) ["tv", "tablet", "laptop", "printer"]
@@ -98,6 +107,7 @@ products.splice(1, 1);
 console.log(products); // ["tablet", "printer"]
 
 ```
+
 ## Recorrer un array
 
 ```javascript
