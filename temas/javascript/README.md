@@ -3,6 +3,44 @@
 Es el lenguaje de programación con el cual podras ser el rey , un full stack. 
 ![Javascript](https://bit.ly/2LM4xbe)
 
+## FUNCIONES
+Es  un conjunto de instrucciones que realiza una tarea o calcula un valor
+
+### Sintaxis
+
+```javascript
+function functionName(parameters) {
+    // codigo a ejecutar
+}
+
+```
+## Function Declaration
+Las funciones declaradas no se ejecutan inmediatamente. Se "guardan para un uso posterior" 
+
+y se ejecutarán más tarde, cuando se invoquen .
+
+```javascript
+function sumar(a, b) {
+    return a + b;
+}
+```
+## Function Expression
+la función se crea y se asigna a la variable de forma explícita, como cualquier otro valor.
+
+La función  es en realidad una función anónima. Siempre se invocan (se llaman) utilizando
+
+ el nombre de la variable.
+
+```javascript
+const restar =function (a, b) {
+    return a - b;
+};
+// Invocar
+restar(10,4)  // --> 6
+
+```
+
+
 ## OBJETOS 
 Un objeto es una colección de propiedades, y una propiedad es una asociación entre un nombre (o clave) y un valor.
 
@@ -87,10 +125,6 @@ console.log(product.dataSheet.model); // 15-cw108la
 ```javascript
 
 ```
-
-
-
-
 
 
 --- 
