@@ -159,10 +159,12 @@ products.unshift('tv'); // -->  ["tv", "tablet", "laptop", "printer", "camera"]
 
 // otra forma 
 products[0] = 'nuevo producto';
-console.log(products);   // ["nuevo producto", "tablet", "laptop", "printer", "camera"]
+console.log(products);  
+ // ["nuevo producto", "tablet", "laptop", "printer", "camera"]
 
 products[5] = 'radio'; 
-console.log(products);  // ["nuevo producto", "tablet", "laptop", "printer", "camera", "radio"]
+console.log(products);  
+// ["nuevo producto", "tablet", "laptop", "printer", "camera", "radio"]
 ```
 ## Eliminar valores de un array
 ```javascript
@@ -204,8 +206,8 @@ const spred = [...arr, 4, 5];
 console.log(spred); // --> [1, 2, 3, 4, 5]
 ```
 ## Destructuring de arrays
-La sintaxis de desestructuración es una expresión de JavaScript que permite desempacar valores de arreglos
-o propiedades de objetos en distintas variables.
+La sintaxis de desestructuración es una expresión de JavaScript que permite desempacar valores de 
+arreglos o propiedades de objetos en distintas variables.
 ```javascript
 const numbers = [10,20,30,40];
 const [first, second, ,fourth ]= numbers;
@@ -239,8 +241,9 @@ numbers.forEach(function(n) {
 // 100
 ```
 ## map()
-El método map() crea un nuevo array con los resultados de la llamada a la función indicada aplicados 
-a cada uno de sus elementos.
+El método map() crea un nuevo array con los resultados de la llamada a la función 
+
+indicada aplicados a cada uno de sus elementos.
 
 ```javascript
 // tomamos como referencia el array de startups anterior
