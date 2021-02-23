@@ -258,7 +258,63 @@ const nuevoArr = numbers.map(function(n) {
 console.log(nuevoArr); // [33, 240]
 
 ```
+## ARRAY METHODS
 
+## filter()
+
+El método filter() crea un nuevo array con todos los elementos que cumplan 
+
+la condición implementada por la función dada.
+
+```javascript
+const cart = [
+    {name: 'short' , price: 40},
+    {name: 'jean' , price: 70},
+    {name: 'shoes' , price: 120},
+    {name: 'watch' , price: 150}
+]
+// traer los productos que cuesten mas de 100
+const result = cart.filter( prod => prod.price > 100);
+console.log(result);
+/*
+ [
+    {name: 'shoes' , price: 120},
+    {name: 'watch' , price: 150}
+]
+*/
+```
+## find()
+El método find() devuelve el valor del primer elemento del array que cumple
+
+la función de prueba proporcionada.
+
+
+```javascript
+// trae el producto jean del array de cart 
+const result = cart.find( prod => prod.name === 'jean');
+console.log(result);
+//  {name: 'jean' , price: 70}
+
+```
+## reduce()
+
+El método reduce() ejecuta una función reductora sobre cada elemento de un array,
+
+devolviendo como resultado un único valor.
+
+
+```javascript
+const carrito = [
+    {name: 'pisco' , price: 50},
+    {name: 'wisky' , price: 60},
+    {name: 'vodka' , price: 40} 
+]
+// cuanto es el total a pagar del carrito de compras
+const resultado = carrito.reduce((acum, prod) => acum + prod.price, 0);
+console.log(`El total es : ${resultado} dolares`);
+//   El total es : 150 dolares
+
+```
 
 ```javascript
 
