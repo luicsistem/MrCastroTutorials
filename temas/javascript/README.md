@@ -1,7 +1,8 @@
 # JAVASCRIPT
 
 Es el lenguaje de programación con el cual podras ser el rey , un full stack. 
-![Javascript](https://bit.ly/2LM4xbe)
+
+![Javascript](javascript.png)
 
 ## FUNCIONES
 Es  un conjunto de instrucciones que realiza una tarea o calcula un valor
