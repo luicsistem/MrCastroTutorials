@@ -33,11 +33,30 @@ La función  es en realidad una función anónima. Siempre se invocan (se llaman
  el nombre de la variable.
 
 ```javascript
-const restar =function (a, b) {
+const restar = function (a, b) {
     return a - b;
 };
 // Invocar
 restar(10,4)  // --> 6
+
+```
+## Arrow Function (Funcion Flecha )
+
+Las arrow functions  son una nueva manera de expresar las funciones de siempre
+
+y hay distintas variantes en la sintaxis.
+
+```javascript
+// tomando como ejemplo la anterior function expresion , 
+// lo convertiremos  a arrow function
+
+const restar = (a,b) => {
+    return a - b;
+}
+
+// tambien lo podemos expresar en una sola linea
+const restar = (a,b) =>  a - b;
+
 
 ```
 
