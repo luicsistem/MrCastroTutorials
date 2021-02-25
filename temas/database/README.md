@@ -60,6 +60,10 @@ CREATE TABLE produts (
 );
 -- Para el incremento automatico se utiliza la palabra clave
 --En  Sql Server IDENTITY  | -- En MySQL AUTO_INCREMENT
+
+| prodId | prodName | price |
+----------------------------
+|        |          |       |    
 ```
 ### Insertando datos
 Para insertar un nuevo registro en la tabla "products", NO tendremos que especificar 
@@ -77,6 +81,10 @@ VALUES ('Tablet', 300.99);
 -- 
 ALTER TABLE products
 ADD description TEXT;
+
+| prodId | prodName | price      | description |
+---------------------------------------------  
+|        |          |            |             |
 ```
 ### Modificar Columna de una tabla
 Para cambiar el tipo de datos de una columna en una tabla, use la siguiente sintaxis:
@@ -91,42 +99,120 @@ ALTER TABLE products
 MODIFY COLUMN price INT ;
 ```
 
-### Modificar Nombre de la columna de una tabla
+### Modificar nombre de la columna de una tabla
 
 ```sql
 -- En Sql Server , se utiliza un procedimiento almacenado
 EXEC sp_rename 'products.price', 'modificado', 'COLUMN';
 
-| prodId | prodName | modificado | description |
-| :--- | :--- | :--- | :--- |
-|    |   |    |   |
-
-
-
 -- En MySQL
+ALTER TABLE products
+CHANGE price  modificado  INT ;
+
+
+| prodId | prodName | modificado | description |
+---------------------------------------------  
+|        |          |            |             |
 
 ```
 
+### Modificar nombre a una  tabla
+
+```sql
+-- En Sql Server , se utiliza un procedimiento almacenado
+EXEC sp_rename 'products', 'modiNameTable';
+
+-- En MySQL
+RENAME TABLE products 
+TO modiNameTable;
+
+-- lo volvemos a modificar el nombre quedando (productos)
+
+```
 
 ### Actualizar Registros
 Vamos agregar un registro a la columna description.
 ```sql
 -- 
-UPDATE products 
+UPDATE productos 
 SET description = 'nueva descripcion'
 WHERE prodId = 1;
 ```
 
-### Borrar Base de Datos
+### Borrar columna de una Tabla 
 
 ```sql
-DROP DATABASE prueba;
+-- 
+ALTER TABLE productos 
+DROP COLUMN description;
+
+| prodId | prodName | modificado | 
+--------------------------------
+|        |          |            |            
+
 ```
+### Borrar todos los registros de una Tabla 
+
+```sql
+--
+TRUNCATE TABLE productos;
+```
+
 ### Borrar Tabla 
 
 ```sql
-DROP TABLE tablaPrueba;
+--
+DROP TABLE productos;
 ```
+
+
+### Borrar Base de Datos
+
+```sql
+--
+DROP DATABASE ecommerce;
+```
+
+***
+
+# UN DIA DE TRABAJO DE UN DBA (SQL SERVER) 
+
+![DBA](https://bit.ly/3aSRmz2)
+
+## Herramientas
+* Microsoft SQL Server
+* Microsoft excel
+* Visual Studio Code
+* SQL Server Integration Services (SISS)
+* SQL Server Reporting Services (SSRS)
+* Power BI
+* Remoto : VPN como FortiClient
+
+## Tareas del dia
+* Restauracion - Backups
+* Crear Usuarios , dar permisos.
+* Atender Tickes.
+* Correr scripts.
+* Realizar reportes, etc.
+
+***
+## Para los Reportes
+lo solicitado los (id) los pasa a un excel que esta concatenado 
+
+con insert.Luego crea una tabla temporal x , para luego realizar 
+
+inner join con las tablas correspondientes.
+
+## SENTENCIAS CONSULTADAS
+* GROUP BY, ORDER BY.
+* COUNT , SUM, MAX , AVG().
+* INNER JOIN.
+* LIKE, UPDATE, IN .
+* DATEDIFF().
+* SELECT TOP(1).
+* CASE WHEN - THEN ELSE, etc.
+
+*** 
 
 ```sql
 
