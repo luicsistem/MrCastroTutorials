@@ -71,7 +71,7 @@ INSERT INTO products (prodName, price)
 VALUES ('Tablet', 300.99);
 
 ```
-### Agregar Columna nueva
+### Agregar Columna nueva  
 
 ```sql
 -- 
@@ -91,10 +91,21 @@ ALTER TABLE products
 MODIFY COLUMN price INT ;
 ```
 
-### Modificar Nombre de una tabla
+### Modificar Nombre de la columna de una tabla
 
-FALTA
+```sql
+-- En Sql Server , se utiliza un procedimiento almacenado
+EXEC sp_rename 'products.price', 'modificado', 'COLUMN';
 
+| prodId | prodName | modificado | description |
+| :--- | :--- | :--- | :--- |
+|    |   |    |   |
+
+
+
+-- En MySQL
+
+```
 
 
 ### Actualizar Registros
