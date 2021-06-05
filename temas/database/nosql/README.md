@@ -1,5 +1,6 @@
 # MONGODB
 MongoDB es una base de datos distribuida, basada en documentos y de uso general que ha sido diseñada para desarrolladores de aplicaciones modernas y para la era de la nube. Ninguna otra ofrece un nivel de productividad de uso tan alto.
+
 ![SQL](https://bit.ly/3uSNmFl)
 
 ### Documentos JSON
