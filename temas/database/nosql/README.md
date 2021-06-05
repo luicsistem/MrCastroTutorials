@@ -5,7 +5,7 @@ MongoDB es una base de datos distribuida, basada en documentos y de uso general 
 
 ### Documentos JSON
 
-```sql
+```javascript
 {
   "_id": "5cf0029caff5056591b0ce7d",
   "firstname": "Luis",
