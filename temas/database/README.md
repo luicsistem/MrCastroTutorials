@@ -103,7 +103,7 @@ MODIFY COLUMN price INT ;
 
 ```sql
 -- En Sql Server , se utiliza un procedimiento almacenado
-EXEC sp_rename 'products.price', 'modificado', 'COLUMN';
+EXEC sp_rename 'products.price', 'modificado';
 
 -- En MySQL
 ALTER TABLE products
