@@ -29,44 +29,65 @@ Mongo shell se conecta automáticamente con la instancia de Mongo DB ejecutada e
 C:\ >  mongo
   ---
     > show dbs
-
 ```
 
 ## Crear una base de datos
 ```javascript
-
     > use mydb
-
 ```
 ## Crear collection
 ```javascript
-
     > db.createCollection("users" )
-
 ```
+## mostrar collections
+```javascript
+    > show collections
+```
+
 ## Agregar documentos
 
 ```javascript
-
     > db.users.insertOne( { name: "luis", age: 33, occupation: "engineer"})
-
 ```
 ## Listar 
 
 ```javascript
-
     > db.users.find()
-    { "name": "luis", "age": 33, "occupation": "engineer"}
+    { "_id": "5cf0029caf91b0ce7d", "name": "luis", "age": 33, "occupation": "engineer"}
 
     > db.users.find().pretty()
+```
+ ## Buscar un documento
+```javascript
+    > db.users.findOne("60bc181ad845b91bb711ea75")
+```
+
+## Modificar
+
+```javascript
+    > db.clientes.update( { name: "luis"} ,{ $set: { name:"mrCastro"}})
+```
+
+## Eliminar
+```javascript
+     // elimina por su id
+    > db.users.remove({ "_id" : ObjectId("60bc181ad845b91bb711ea75")})
+    // por especificacion
+    > db.users.remove({name: "luis"})
+    //  elimina los documentos de una collection
+    db.users.remove({})
+     // ellimina la collection
+    > db.users.drop()
+      // ellimina la base de datos -- 1ro cambiar a otra db
+    > db.dropDatabase()
+
 
 ```
 
 ```javascript
-
     >
-
 ```
+
 
 ### Documentos JSON
 
