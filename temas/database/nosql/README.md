@@ -57,7 +57,7 @@ C:\ >  mongo
 
     > db.users.find().pretty()
 ```
- ## Buscar un documento
+## Buscar un documento
 
 ```javascript
     > db.users.findOne("60bc181ad845b91bb711ea75")
