@@ -52,12 +52,13 @@ C:\ >  mongo
 ## Listar 
 
 ```javascript
-    > db.users.find()
-    { "_id": "5cf0029caf91b0ce7d", "name": "luis", "age": 33, "occupation": "engineer"}
+ > db.users.find()
+ { "_id": "5cf00f91b0ce7d", "name": "luis", "age": 33,"occupation": "engineer"}
 
     > db.users.find().pretty()
 ```
  ## Buscar un documento
+
 ```javascript
     > db.users.findOne("60bc181ad845b91bb711ea75")
 ```
